@@ -9,5 +9,6 @@ void setup(){
 }
 
 void draw(){
-  
+  w.step();
+  w.display();
 }
