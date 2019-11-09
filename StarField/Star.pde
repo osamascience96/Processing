@@ -5,6 +5,8 @@ class Star{
     x = random(-width, width);
     y = random(-height, height);
     z = random(width);
+    
+    System.out.println(x + " " + y + " " + z);
   }
   
   void update(){
