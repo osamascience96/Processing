@@ -3,7 +3,7 @@ class Walker{
   private int y;
   
   Walker(){
-    // to start from the mid of the screen.
+    // to start from the mid of the screen
     x = width / 2;
     y = height / 2;
   }
