@@ -12,6 +12,8 @@ class Walker{
   void step(){
     int choice = int(random(4));
     
+    
+    
     // each selection has a probability of 25%
     if (choice == 0){
       x = x + 1;
