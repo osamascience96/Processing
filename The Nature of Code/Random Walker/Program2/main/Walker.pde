@@ -30,10 +30,14 @@ class Walker{
     
     x += xStep;
     y += yStep;
+    
+    // constrain a value to not exceed the min and max value 
+    x = constrain(x, 0, width-1);
+    y = constrain(y, 0, height-1);
   }
   
   void display(){
-    stroke(0);
+    strokeWeight(4);
     
     point(x, y);
   }
