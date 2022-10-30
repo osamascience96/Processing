@@ -13,4 +13,6 @@ void draw(){
   
   fill(255);
   ellipse(circleX, circleY, 24, 24);
+  println("CircleX: " + circleX);
+  println("CircleY: " + circleY);
 }
