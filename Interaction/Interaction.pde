@@ -7,6 +7,9 @@ void draw(){
   fill(150);
   stroke(255);
   strokeWeight(4);
-  rectMode(CENTER);
   line(pmouseX, pmouseY, mouseX, mouseY);
+}
+
+void mousePressed(){
+  background(50);
 }
