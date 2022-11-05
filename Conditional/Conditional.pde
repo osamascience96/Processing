@@ -1,20 +1,21 @@
-float x = 0;
-boolean going = false;
+float circleX = 0;
+float xSpeed = 1;
 
 void setup(){
   size(640, 360);
 }
 
 void draw(){
-  background(50);
-  fill(255);
+  background(0);
+  fill(102);
+  stroke(255);
+  ellipse(circleX, height/2, 32, 32);
+  circleX += xSpeed;
   
-  ellipse(x, 150, 24, 24);
-  if(going){
-    x+=2;
+  if(circleX >= width || circleX <= 0){
+    xSpeed *= -2;
   }
-}
-
-void mousePressed(){
-  going = !going;
+  
+  println("CircleX: " + circleX);
+  println("xSpeed: " + xSpeed);
 }
